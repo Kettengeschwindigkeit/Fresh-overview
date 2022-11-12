@@ -16,7 +16,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             <h2 class="text-lg font-bold">{product.title}</h2>
             <p class="font-bold">{product.price}$</p>
             <a href={`/product/${product.id}`}>Open</a>
-            <button class="px-4 py-2 text-white bg-red-400 border rounded" onClick={toggle}>Toggle Description</button>
+            <button class="px-4 py-2 text-white bg-blue-400 border rounded" onClick={toggle}>Toggle Description</button>
             {details && <p>{product.description}</p>}
         </div>
     )
